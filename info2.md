@@ -11,19 +11,19 @@ In Linux, **device files** in `/dev/` represent access points to hardware. But t
 
 Think of this like a **postal system**:
 
-- **Major number** → The **postal service** (e.g., DHL, UPS, FedEx)
-- **Minor number** → The **package's tracking number** within that service
+- **Major number** → The **postal service** (e.g., DHL, UPS, FedEx)  
+- **Minor number** → The **package's tracking number** within that service  
 
-So:
+So:  
 
-| Major | Minor | Device             | Meaning                                  |
-|-------|-------|--------------------|------------------------------------------|
-| 8     | 0     | `/dev/sda`         | First SATA hard disk                     |
-| 8     | 1     | `/dev/sda1`        | First partition on that disk             |
-| 188   | 0     | `/dev/ttyUSB0`     | First USB-to-serial device (e.g. FTDI)   |
-| 166   | 0     | `/dev/ttyACM0`     | First CDC ACM USB serial (e.g. Arduino)  |
+| Major | Minor | Device             | Meaning                                  |  
+|-------|-------|--------------------|------------------------------------------|  
+| 8     | 0     | `/dev/sda`         | First SATA hard disk                     |  
+| 8     | 1     | `/dev/sda1`        | First partition on that disk             |  
+| 188   | 0     | `/dev/ttyUSB0`     | First USB-to-serial device (e.g. FTDI)   |  
+| 166   | 0     | `/dev/ttyACM0`     | First CDC ACM USB serial (e.g. Arduino)  |  
 
----
+---  
 
 ## 🔧 Why It Matters
 
