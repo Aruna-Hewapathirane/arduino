@@ -1,4 +1,5 @@
-# 🔌 What Happens When You Plug in an Arduino Uno to a Linux System
+# 🔌 
+# What Happens When You Plug in an Arduino Uno to a Linux System
 
 This guide explains exactly what happens — both hardware and software — when an Arduino Uno is connected via USB to a Linux system. It also shows what commands/tools you can use to observe each step.
 
