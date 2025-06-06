@@ -16,24 +16,24 @@ WHAT IS CDC_ACM?
 - CDC: Communications Device Class
 - ACM: Abstract Control Model (emulates a serial port)
 
-DIAGRAM OVERVIEW
-----------------
-+-----------------+         +-------------+         +--------------------+
-| USB Device      |  <-->   | CDC-ACM     |  <-->   | Linux cdc_acm      |
-| (e.g. Arduino)  |         | USB Class   |         | kernel module      |
-+-----------------+         +-------------+         +--------------------+
-                                                       |
-                                                       v
-                                                +-----------------+
-                                                | /dev/ttyACM0    |
-                                                | (character dev) |
-                                                +-----------------+
-                                                       |
-                                                       v
-                                           +---------------------------+
-                                           | User tools / applications |
-                                           | (e.g. cat, screen, etc.)  |
-                                           +---------------------------+
+DIAGRAM OVERVIEW  
+----------------  
++-----------------+         +-------------+         +--------------------+  
+| USB Device      |  <-->   | CDC-ACM     |  <-->   | Linux cdc_acm      |  
+| (e.g. Arduino)  |         | USB Class   |         | kernel module      |  
++-----------------+         +-------------+         +--------------------+  
+                                                       |  
+                                                       v  
+                                                +-----------------+  
+                                                | /dev/ttyACM0    |  
+                                                | (character dev) |  
+                                                +-----------------+  
+                                                       |  
+                                                       v  
+                                           +---------------------------+  
+                                           | User tools / applications |  
+                                           | (e.g. cat, screen, etc.)  |  
+                                           +---------------------------+  
 
 WHY IS /dev/ttyACM0 A CHARACTER DEVICE?
 ---------------------------------------
